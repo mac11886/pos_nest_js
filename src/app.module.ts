@@ -2,10 +2,11 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { PaymentModule } from './payment/payment.module';
 import { RepositoriesModule } from './repositories/repositories.module';
 import { TableModule } from './table/table.module';
 import { UsecasesModule } from './usecases/usecases.module';
-import { PaymentModule } from './payment/payment.module';
+import { MenuModule } from './menu/menu.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { PaymentModule } from './payment/payment.module';
     RepositoriesModule,
     UsecasesModule,
     PaymentModule,
+    MenuModule,
   ],
   controllers: [AppController],
   providers: [AppService],

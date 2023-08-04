@@ -22,7 +22,7 @@ export class PaymentRepositoryService {
       });
       return returnResponse(true, HttpStatus.OK, 'success', findAll);
     } catch (error) {
-      return returnResponse(true, HttpStatus.OK, 'success', error);
+      return returnResponse(true, HttpStatus.BAD_GATEWAY, 'success', error);
     }
   }
 
@@ -36,7 +36,7 @@ export class PaymentRepositoryService {
       });
       return returnResponse(true, HttpStatus.OK, 'success', findAll);
     } catch (error) {
-      return returnResponse(true, HttpStatus.OK, 'success', error);
+      return returnResponse(true, HttpStatus.BAD_GATEWAY, 'success', error);
     }
   }
 }
