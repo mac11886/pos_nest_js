@@ -7,6 +7,8 @@ import { RepositoriesModule } from './repositories/repositories.module';
 import { TableModule } from './table/table.module';
 import { UsecasesModule } from './usecases/usecases.module';
 import { MenuModule } from './menu/menu.module';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -20,6 +22,8 @@ import { MenuModule } from './menu/menu.module';
     UsecasesModule,
     PaymentModule,
     MenuModule,
+    AuthModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
